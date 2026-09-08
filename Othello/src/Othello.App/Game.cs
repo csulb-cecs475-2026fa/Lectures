@@ -93,7 +93,7 @@ namespace Othello.App
 		public static void PrintBoard(OthelloBoard board) {
 			Console.WriteLine("- 0 1 2 3 4 5 6 7");
 			for (int i = 0; i < OthelloBoard.BOARD_SIZE; i++) {
-				Console.Write("{0} ", i);
+				Console.Write($"{i}");
 				for (int j = 0; j < OthelloBoard.BOARD_SIZE; j++) {
 					int space = board.GetPlayerAtPosition(new BoardPosition(i, j));
 					char label = space switch {
