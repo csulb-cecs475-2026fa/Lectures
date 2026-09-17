@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Cecs475.Employees {
+	// An employee that is paid based on an hourly wage and the number of hours worked.
 	public class HourlyEmployee : Employee {
 		public decimal HourlyWage { get; set; }
 		public decimal HoursWorked { get; set; }

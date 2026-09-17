@@ -14,7 +14,7 @@ namespace CompositionEmployees {
 			HoursWorked = hoursWorked;
 		}
 
-		public decimal GetWages() {
+		public decimal GetWages(Employee e) {
 			return HoursWorked * HourlyRate;
 		}
 	}

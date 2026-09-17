@@ -55,4 +55,24 @@ namespace Cecs475.Vending {
 		}
 	}
 
+	public class MobilePaymentVendingMachine : VendingMachineBad {
+		public MobilePaymentVendingMachine(string machineName, decimal cost, int inventory)
+			: base(machineName, cost, inventory) {
+		}
+
+		public override bool AcceptsPayment(IPayment payment) {
+			return payment is MobilePayment;
+		}
+
+		public override bool CanPurchase(int count, IPayment payment) {
+			// Credit cards are always accepted as payment.
+			return payment is MobilePayment;
+		}
+
+		public override decimal ComputeChange(int count, IPayment payment) {
+			// Credit cards never give change.
+			return 0.0M;
+		}
+	}
+
 }

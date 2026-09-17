@@ -14,6 +14,7 @@ namespace Cecs475.Employees {
 		public CommissionEmployee(int id, string first, string last, DateTime startDate,
 			decimal baseWage, decimal commissionRate, decimal commissionSales)
 			: base(id, first, last, startDate) {
+			
 			BaseWage = baseWage;
 			CommissionRate = commissionRate;
 			CommissionSales = commissionSales;

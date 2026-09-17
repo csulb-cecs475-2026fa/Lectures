@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace CompositionEmployees {
 	public interface ICompensation {
-		decimal GetWages();
+		decimal GetWages(Employee e);
 	}
 }

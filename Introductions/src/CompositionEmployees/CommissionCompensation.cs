@@ -16,7 +16,7 @@ namespace CompositionEmployees {
 			BaseWage = baseWage;
 		}
 
-		public decimal GetWages() {
+		public decimal GetWages(Employee e) {
 			return BaseWage + CommissionRate * CommissionSales;
 		}
 	}

@@ -16,8 +16,6 @@ internal class Program {
 		Console.WriteLine($"AcceptsPayment: {bad.AcceptsPayment(creditPayment)}");
 		Console.WriteLine($"CanPurchase: {bad.CanPurchase(1, creditPayment)}");
 
-		return;
-
 
 		Console.WriteLine("\nCreditCardVendingMachine, with cash payment");
 		VendingMachineBad cardBad = new CreditCardVendingMachine("Payday", 2.00m, 10);
@@ -28,7 +26,9 @@ internal class Program {
 		Console.WriteLine($"AcceptsPayment: {cardBad.AcceptsPayment(creditPayment)}");
 		Console.WriteLine($"CanPurchase: {cardBad.CanPurchase(1, creditPayment)}");
 		Console.WriteLine($"ComputeChange: {cardBad.ComputeChange(1, creditPayment)}");
-		return;
+
+
+
 
 		Console.WriteLine("\nGood VendingMachine, with cash inserter and cash payment");
 		VendingMachine good = new VendingMachine("Skittles", 1.50m, 100);
@@ -36,10 +36,11 @@ internal class Program {
 		Console.WriteLine($"AcceptsPayment: {good.AcceptsPayment(cashPayment)}");
 		Console.WriteLine($"CanPurchase: {good.CanPurchase(1, cashPayment)}");
 		Console.WriteLine($"ComputeChange: {good.ComputeChange(1, cashPayment)}");
-		Console.WriteLine($"AcceptsPayment: {good.AcceptsPayment(cashPayment)}");
-		Console.WriteLine($"CanPurchase: {good.CanPurchase(1, cashPayment)}");
-		Console.WriteLine($"ComputeChange: {good.ComputeChange(1, cashPayment)}");
-
+		Console.WriteLine($"AcceptsPayment: {good.AcceptsPayment(creditPayment)}");
+		Console.WriteLine($"CanPurchase: {good.CanPurchase(1, creditPayment)}");
+		good.AddPaymentDevice(new CreditCardReader());
+		Console.WriteLine($"AcceptsPayment: {good.AcceptsPayment(creditPayment)}");
+		Console.WriteLine($"CanPurchase: {good.CanPurchase(1, creditPayment)}");
 
 		return;
 
