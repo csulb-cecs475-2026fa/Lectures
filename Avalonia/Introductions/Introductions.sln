@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding", "src\Binding\Bind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon", "src\Pokemon\Pokemon.csproj", "{58D853BE-5B8C-45DB-89E2-106EE646CC50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonManual", "src\PokemonManual\PokemonManual.csproj", "{3A8E7ACD-65DA-47C7-AA6B-686B1B00C66E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{58D853BE-5B8C-45DB-89E2-106EE646CC50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58D853BE-5B8C-45DB-89E2-106EE646CC50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58D853BE-5B8C-45DB-89E2-106EE646CC50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8E7ACD-65DA-47C7-AA6B-686B1B00C66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8E7ACD-65DA-47C7-AA6B-686B1B00C66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8E7ACD-65DA-47C7-AA6B-686B1B00C66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8E7ACD-65DA-47C7-AA6B-686B1B00C66E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{EC13B1CD-DE9E-43C9-A21B-1D4618F3FB7F} = {C0F2BF18-666D-497C-8E3F-245D258F2323}
 		{99E92CC7-6B3C-4E19-A12F-F4C77993B0B0} = {C0F2BF18-666D-497C-8E3F-245D258F2323}
 		{58D853BE-5B8C-45DB-89E2-106EE646CC50} = {C0F2BF18-666D-497C-8E3F-245D258F2323}
+		{3A8E7ACD-65DA-47C7-AA6B-686B1B00C66E} = {C0F2BF18-666D-497C-8E3F-245D258F2323}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B93E034-4134-42E7-85DC-8166AA5DDE92}

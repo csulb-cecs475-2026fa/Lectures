@@ -9,7 +9,7 @@ namespace Binding {
 		public MainWindow() {
 			InitializeComponent();
 			Employee e = new Employee() {
-				Age = 40
+				Age = 60
 			};
 			mSalaryLabel.DataContext = e;
 			mAgeText.DataContext = e;
@@ -33,7 +33,11 @@ namespace Binding {
 
 		private void Button_Click(object sender, RoutedEventArgs e) {
 			// Set the first employee's age to 100, which does not update the UI.
-			((Employee)mSalaryLabel.DataContext!).Age = 100;
+			if (mSalaryLabel.DataContext is not Employee em) {
+				throw new System.Exception("DataContext is not an Employee!");
+
+			}
+			em.Age = 100;
 		}
 
 		private void Button2_Click(object sender, RoutedEventArgs e) {

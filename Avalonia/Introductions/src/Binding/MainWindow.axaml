@@ -11,11 +11,11 @@
 		<StackPanel HorizontalAlignment="Left">
 			<WrapPanel>
 				<Label>Age:</Label>
-				<TextBox x:Name="mAgeText" VerticalAlignment="Center" Text="{Binding Age, Mode=OneWay, DataType={x:Type local:Employee}}"/>
+				<TextBox x:Name="mAgeText" VerticalAlignment="Center" Text="{Binding Age, Mode=OneTime, DataType={x:Type local:Employee}}"/>
 			</WrapPanel>
 			<WrapPanel>
 				<Label>Salary:</Label>
-				<Label x:Name="mSalaryLabel" Content="{Binding Salary, Mode=OneWay, DataType={x:Type local:Employee}}"/>
+				<Label x:Name="mSalaryLabel" Content="{Binding Salary, Mode=OneTime, DataType={x:Type local:Employee}}"/>
 			</WrapPanel>
 			<Button Click="Button_Click">Set Age to 100</Button>
 		</StackPanel>

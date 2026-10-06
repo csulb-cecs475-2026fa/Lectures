@@ -7,8 +7,8 @@
         Title="DockLayout">
 	<DockPanel>
 		<TextBox DockPanel.Dock="Top">Dock = "Top"</TextBox>
-		<TextBox DockPanel.Dock="Bottom">Dock = "Bottom"</TextBox>
 		<TextBox DockPanel.Dock="Left">Dock = "Left"</TextBox>
-		<TextBox>This TextBox "fills" the remaining space.</TextBox>
+		<TextBox DockPanel.Dock="Bottom">Dock = "Bottom"</TextBox>
+		<Rectangle Fill="Red"></Rectangle>
 	</DockPanel>
 </Window>

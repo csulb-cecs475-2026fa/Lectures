@@ -9,6 +9,9 @@ namespace Pokemon {
 	public partial class MainWindow : Window {
 		public MainWindow() {
 			InitializeComponent();
+
+
+
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e) {
@@ -20,10 +23,10 @@ namespace Pokemon {
 		}
 
 		private void mImage2_MouseDown(object sender, PointerPressedEventArgs e) {
-			for (int i = 0; i < 900000000; i++) {
-				int x = i * i;
-				Console.WriteLine(x);
-			}
+			//for (int i = 0; i < 900000000; i++) {
+			//	int x = i * i;
+			//	Console.WriteLine(x);
+			//}
 
 			var point = e.GetCurrentPoint((Control)sender);
 			if (point.Properties.IsLeftButtonPressed && e.ClickCount == 2) {

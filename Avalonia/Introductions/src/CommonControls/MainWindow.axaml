@@ -30,6 +30,11 @@
 			<ComboBoxItem>
 				<CheckBox>Option 3</CheckBox>
 			</ComboBoxItem>
+			<ComboBoxItem>
+				<ComboBox>
+					<ComboBoxItem>Does this work???</ComboBoxItem>
+				</ComboBox>
+			</ComboBoxItem>
 		</ComboBox>
 		<Label>A list box displays all its elements to be selected from:</Label>
 		<ListBox SelectionMode="Multiple" BorderBrush="Green" BorderThickness="1.0">

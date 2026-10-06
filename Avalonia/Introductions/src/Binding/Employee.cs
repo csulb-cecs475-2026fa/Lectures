@@ -14,6 +14,13 @@ namespace Cecs475.Avalonia.Binding {
 		public int Salary { get { return Age * 50; } }
 	}
 
+
+
+
+
+
+
+
 	class NotifyingEmployee : INotifyPropertyChanged {
 		private int mAge;
 		public event PropertyChangedEventHandler? PropertyChanged;

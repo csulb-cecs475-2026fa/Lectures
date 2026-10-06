@@ -13,7 +13,7 @@
 	forms an element tree. 
 	
 	-->
-	<!--<Button Width="100">Hello, world!</Button>-->
+	<!--<Button Width="1000" Foreground="Black">Hello, world!</Button>-->
 	<!--
 	This button is a child element of the Window element. 
 	Even the text inside the <Button> tags is another element, whose parent is the Button.
